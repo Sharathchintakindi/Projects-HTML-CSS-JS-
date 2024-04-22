@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(100, 205, 155);
+    padding: 50px;
+    background: url("https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    backdrop-filter: blur(10px);
+  }
+
+  .container{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: rgba(54, 131, 54, 0.842);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+   
+  }
+
+  .container header{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align:center;
+    text-decoration: underline;
+    text-transform:uppercase;
+  }
+
+  .form .input-box{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+ .input-box input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  }
+  .input-box label{
+    color: #fff;
+    font-family: 500;
+    font-size: 1.2rem;
+  }
+
+  .form :where(.input-box input,.select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 0 15px;
+  }
+
+  .form .cloumn {
+    display: flex;
+    column-gap: 30px;
+    /* color: #fff; */
+  }
+
+
+  .form .gender-box {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+.form :where(.gender-box,.gender){
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form .gender{
+column-gap: 30px;
+
+}
+
+.gender input{
+    accent-color: rgba(66, 90, 66, 0.842);
+
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.form .gender:hover{
+    text-decoration: underline;
+    color: #fff;
+
+}
+
+.address :where(input,.select-box){
+    margin-top: 20px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 102.5%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+.form button{
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* opacity: 0.6; */
+    transition: all 0.2s ease-in-out;
+    
+}
+
+ button:hover{
+    text-decoration: underline;
+    color: black;
+    background: rgba(66, 90, 66, 0.842);
+
+}
+/* responsive screen */
+
+  @media screen and (max-width: 500px)
+  {
+    .form .cloumn{
+        flex-wrap:wrap;
+    }
+
+    .form :where(.gender-box,.gender){
+        row-gap: 15px;
+    }
+  }

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1565402170291-8491f14678db?auto=format&fit=crop&q=60&w=700&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: cursive;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0px 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 59, 10);
+}
+
+.navbar ul li a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -6px;
+  position: absolute;
+  background: rgb(255, 59, 10);
+  transition: 0.5s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.content h2 {
+  text-decoration: underline;
+  color: crimson;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.content p {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.btn button {
+  padding: 10px;
+  font-size: 15px;
+  font-family: cursive;
+  color: crimson;
+  font-weight: 800;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.btn button:hover {
+  transform: translateY(-50%);
+  background: blueviolet;
+}

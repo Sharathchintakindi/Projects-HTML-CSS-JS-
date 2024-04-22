@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+}
+
+.menu-bar {
+  background: orangered;
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: rgb(201, 56, 4);
+  border-radius: 15px;
+  border: 2px solid wheat;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+  display: block;
+}

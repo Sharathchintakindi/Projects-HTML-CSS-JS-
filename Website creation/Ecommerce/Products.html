@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website | Red Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="javascrpit.js"></script> -->
+</head>
+
+   
+
+        <div class="container">
+
+            <!-- navBar Creation -->
+
+            <div class="navBar">
+
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo" width="150px">
+                    </div>
+
+                        <nav>
+                                <ul id="menuItems">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Account</a></li>
+                                </ul>
+                        </nav>
+
+                        <img src="images/cart.png" width="30px" height="30px">
+
+                        <img src="images/menu.png" class="menu"  onclick="menuToogle()">
+
+                        
+
+            </div>
+              
+        </div>
+
+<!-- Featured -products -->
+
+<div class="smallContainer">
+
+    <div class="row row2">
+        <h2>All Products</h2>
+        <p>Sort</p>
+        <select>
+            <option >Sort By Newest</option>
+            <option >Sort By category</option>
+            <option >Sort By Relevance</option>
+            <option >Sort By Price</option>
+        </select>
+    </div>
+
+
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Red colored T-shirt</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$90.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-2.jpg" alt="">
+            <h4>Black Colored shoes</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$60.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-3.jpg" alt="">
+            <h4>Grey Colored night Tracks</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$10.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-4.jpg" alt="">
+            <h4>Navy Blue colored T-shirt</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$20.99</p>
+        </div>
+
+    </div>
+
+    <!-- latest productss -->
+  
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-5.jpg" alt="">
+            <h4>Grey colored Shoes</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$30.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-6.jpg" alt="">
+            <h4>Black Colored T-Sirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$5.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-7.jpg" alt="">
+            <h4>HRX Socks </h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$2.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-8.jpg" alt="">
+            <h4>Black-colored analouge watch</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$99.99</p>
+        </div>
+
+    </div>
+
+    
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-9.jpg" alt="">
+            <h4>Grey colored analouge watch</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$30.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-10.jpg" alt="">
+            <h4>Black Colored Sports Shoes</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$5.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-11.jpg" alt="">
+            <h4>Grey colored Lace-up Shoes  </h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$2.99</p>
+        </div>
+
+        <div class="col4">
+            <img src="images/product-12.jpg" alt="">
+            <h4>Black-colored Track Pant</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+            </div>
+            <p>$9.99</p>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="page-btn">
+
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+
+    </div>
+
+
+<!-- footer -->
+
+<div class="footer">
+                
+            <div class="container">
+
+                <div class="row">
+
+                            <div class="footer-col1">
+                                
+                                <h3>Download Our App</h3>
+                                <p>Download App for Andriod and iOS mobile Phones</p>
+
+                                <div class="logos">
+                                    <img src="images/play-store.png" alt="">
+                                    <img src="images/app-store.png" alt="">
+
+                                </div>
+
+                            </div>
+
+                            <div class="footer-col2">
+                                <img src="images/logo-white.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque repellat molestiae quas et ratione. Deserunt consectetur debitis qui quas ipsum.</p>
+                            </div>
+
+            
+                            <div class="footer-col3">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li>Coupons</li>
+                                    <li>BlogPost</li>
+                                    <li>Return Policy</li>
+                                    <li>Join Affilicate</li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-col4">
+                                <h3>Follow US</h3>
+                                <ul>
+                                    <li>Facebook</li>
+                                    <li>Twitter</li>
+                                    <li>Instagram</li>
+                                    <li>YouTubee</li>
+                                </ul>
+                            </div> 
+
+                    </div>
+
+                    <hr>
+                    <p class="copyRight">Copyright 2023 - Sharath Chintakindi</p>
+            </div>
+
+</div>
+
+<script>
+var MenuItems = document.getElementById("menuItems")
+
+MenuItems.style.maxHeight = "0px";
+
+function menuToogle(){
+
+    if (MenuItems.style.maxHeight == "0px")
+    {
+     MenuItems.style.maxHeight = "200px"
+        
+    }
+else
+{
+    MenuItems.style.maxHeight = "0px"
+
+}
+
+}
+
+</script>
+</body>
+</html>
